@@ -1,0 +1,89 @@
+# Nothing that belongs to the game ever goes in here. Blocked by extension, so it cannot slip in
+# by accident, and not as a substitute for reading NOTICE.md.
+
+# disc images and dumps
+*.bin
+*.BIN
+*.cue
+*.iso
+*.img
+*.chd
+*.pbp
+*.ecm
+
+# BIOS
+*.rom
+SCPH*
+scph*
+
+# the disc, split for the Device Portal (partir_disco.py)
+*.parte*
+
+# executables, debug info and packages
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.appxsym
+*.appxupload
+
+# signing certificates: yours is yours
+*.pfx
+*.p12
+*.cer
+*.snk
+
+# saves and states
+*.mcd
+*.mcr
+*.srm
+*.sav
+*.pst
+*.state
+saves/
+
+# The compiled overlays are GAME CODE read off your disc, and so are the captures they come from
+# (docs/ASSETS.md). The tools that make them are here; what they make never is.
+overlay_captures*.json
+overlays_static.c
+sources.cmake
+ov_vacio.c
+
+# leftovers of a game project, in case this is cloned inside one
+build/
+build-*/
+UWP-Build/
+paquete-*/
+logs/
+disc/
+bios/
+psx_last_run_report.json
+psx_freeze_dump_*.json
+debug_log.txt
+
+# the originals the patches keep beside the file they change
+*.original
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# editors and OS
+.vs/
+.vscode/
+.idea/
+*.swp
+*.log
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# The package tiles are supplied by whoever packages (docs/ASSETS.md); no game art is distributed here.
+package/Assets/*.png
